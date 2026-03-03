@@ -272,55 +272,61 @@ header .navbar ul li a:hover {
   transform: translateX(5px);
 }
 /* social icons start */
+
 .socials {
   position: relative;
   margin-top: 9rem;
 }
-.socials .social-icons {
-  padding-left: 0;
-  margin-bottom: 0;
+
+.social-icons {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
-.socials .social-icons li {
+
+.social-icons li {
   display: inline-block;
-  margin-bottom: 14px;
+  margin-right: 10px;
 }
+
+/* Circle Design */
 .social-icons a {
-  font-size: 2rem;
-  display: inline-block;
-  line-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: #09011b;
   color: #00d9ff;
-  background-color: #09011b;
-  width: 44px;
-  height: 44px;
-  text-align: center;
-  margin-right: 8px;
-  border-radius: 100%;
-  -webkit-transition: all 0.2s linear;
-  -o-transition: all 0.2s linear;
-  transition: all 0.2s linear;
+  font-size: 20px;
+  transition: all 0.3s ease;
+  text-decoration: none;
 }
-.social-icons a:active,
-.social-icons a:focus,
+
+/* Smooth Hover Animation */
 .social-icons a:hover {
+  transform: translateY(-4px);
   color: #fff;
-  background-color: #0685da;
 }
+
+/* Brand Colors */
 .social-icons a.github:hover {
-  background-color: #0e0e0e;
+  background: #0e0e0e;
 }
-.social-icons a.twitter:hover {
-  background-color: #00aced;
+
+.social-icons a.telegram:hover {
+  background: #0088cc;
 }
-.social-icons a.linkedin:hover {
-  background-color: #007bb6;
+
+.social-icons a.youtube:hover {
+  background: #ff0000;
 }
-.social-icons a.dev:hover {
-  background-color: #070707;
+
+.social-icons a.facebook:hover {
+  background: #1877f2;
 }
-.social-icons a.instagram:hover {
-  background-color: #ee00da;
-}
+
 /* social icons end */
 
 /* hero media queries starts*/
@@ -341,7 +347,6 @@ header .navbar ul li a:hover {
     font-size: 2.2rem;
   }
 }
-/* hero media queries ends*/
 /* hero section end */
 
 /* about section starts */
